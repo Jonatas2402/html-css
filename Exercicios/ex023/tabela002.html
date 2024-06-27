@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma tabela grande</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: rgb(128, 128, 128);
+            color: white;
+        }
+        td.num{
+            background-color: rgba(169, 169, 169, 0.732);
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--anatomia para uma tabela grande
+     table
+      capition
+      Thead
+       TR, TD ,TH
+      Tbody
+       TR, TD, TH
+      Tfooter
+       TR, TD, TH
+    
+    -->
+       <TABLE>
+        <caption><strong>População das unidades federativas</strong></caption>
+        <THEad>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </THEad>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.075</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">30.954.307</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td style="text-align: right;">0000000</td>
+            </tr>
+        </tfoot>
+       </TABLE>
+</body>
+</html>
