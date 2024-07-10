@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            font-weight: bolder;
+            padding: 10px;
+            font-size: 1.3em;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.azul {
+            background-color: rgba(0, 255, 255, 0.336);
+        }
+        col.vermelho {
+            background-color: rgba(255, 0, 0, 0.426);
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio de tabela</h1>
+    <table>
+        <colgroup>
+          <col class="vermelho">
+          <col class="azul">
+          <col class="vermelho">
+          <col class="azul">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Jonatas silva</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Ana Claudia</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Dona de casa</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Cozinheiro</td>
+        </tr>
+        <tr>
+            <td>Roberta</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Eestudante</td>
+        </tr>
+        <tr>
+            <td>Karenn Silva</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Social media</td>
+        </tr>
+    </table>
+</body>
+</html>
