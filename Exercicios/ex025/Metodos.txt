@@ -1,0 +1,11 @@
+metodos de envio de formulários.
+
+metodo padrão.
+
+method GET: o metodo padrão usado pelo navegador para envio de dados em formulários.
+
+não podemos enviar mais de 3.000Bts
+não e´recomendado o uso se conter dados sensiveis no formulário, como senha, dados de cartão, entre outros e envio de imagem.
+nesses casos utilizar o POST.
+
+method POST: metodo de envio que não deixa visivel os dados na URL do navegador. 
