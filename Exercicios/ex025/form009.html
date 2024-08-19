@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="Inum">Número: </label>
+            <input type="range" name="num" id="Inum" min="0" max="10" value="5" oninput="Ival.innerHTML = Number(Inum.value)">
+            <output id="Ival">5</output>
+        </p><!--utilizando JavaScript para alterar o valor do range quando o usuário modifica.-->
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
