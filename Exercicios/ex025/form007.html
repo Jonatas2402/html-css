@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>formulário</title>
 </head>
 <body>
-    
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p> <!--Geralmente utilizar div, utilizando paragrafo para fins educativos.-->
+            <label for="Iest">Estado</label>
+            <select name="Estado" id="Iest">  
+
+           <option value="" selected>---Escolha---</option>     
+           <optgroup label="Região nordeste">
+               <option value="PE">Pernambuco</option>
+               <option value="AL">Alagoas
+               <option value="RN">Rio Grando do Norte</option>
+           </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="Iprof">Profissão</label>
+            <input type="text" name="pof" id="Iprof" list="lstprof" required> <!--o id da lista é atrobuido ao input pela list.-->
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+                <option>Contador</option>
+                <option>Auxiliar</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="Imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="Imsg" cols="30" rows="10" placeholder="sua Mensagem aqui"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
