@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+/* estilo para impressão*/
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: 1.5em;
+}
+
+menu {
+    display: none;
+}
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'esse artigo foi impresso através do site Jonatas.Dev.';
+}
